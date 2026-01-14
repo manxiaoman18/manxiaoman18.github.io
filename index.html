@@ -1,14 +1,25 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/tool.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ddTools</title>
-    <script type="module" crossorigin src="/assets/index-JjIOZ7Zt.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BI1bp2gn.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>正在跳转...</title>
+    <style>
+        body { background-color: #fff; }
+    </style>
+    <script>
+        // 核心跳转逻辑
+        var target = "/ddTools/";
+        // 如果当前不在 ddTools 目录下，就跳过去
+        if (window.location.pathname.indexOf(target) !== 0) {
+            window.location.replace(target);
+        }
+    </script>
+</head>
+<body>
+    <p>正在前往新页面，请稍候...</p>
+    <noscript>
+        <!-- 如果浏览器禁用了 JS，提供手动点击 -->
+        <p>请点击此处跳转：<a href="/ddTools/">/ddTools/</a></p>
+    </noscript>
+</body>
 </html>
